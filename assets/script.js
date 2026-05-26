@@ -1,6 +1,4 @@
-
-
-    const fadeElements = document.querySelectorAll('.fade');
+const fadeElements = document.querySelectorAll('.fade');
 
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach((entry)=>{
@@ -15,5 +13,3 @@
     fadeElements.forEach((el)=>{
       observer.observe(el);
     });
-
-  
